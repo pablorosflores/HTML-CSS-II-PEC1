@@ -1,0 +1,20 @@
+.card {
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    &__img{
+        width:100%;
+        max-width: 100px;
+        margin: auto;
+
+    }
+    &__text{
+        padding: 2px 16px;
+    }
+}
+
+.card--shadow{
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+
+}

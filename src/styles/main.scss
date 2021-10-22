@@ -1,0 +1,50 @@
+/*!------------------------------------------------------------------
+[MAIN STYLESHEET]
+
+PROJECT:	PEC 1 - HTML i CSS II
+VERSION:	0.1
+-------------------------------------------------------------------*/
+
+/**
+* ITCSS Model
+*/
+
+// Tools
+// This is where all the mixins and functions housed
+
+@import "tools/tools";
+
+
+// Settings
+// This is where all the global and brand variables stored
+@import "settings/settings";
+
+// Generic
+// Ground Zero styles like Normalize.css, global box-sizing rules, go here
+@import "generic/generic";
+
+// Elements
+// Unclassed HTML elements (type selectors) go here
+@import "elements/elements";
+
+// Objects
+// Cosmetic-free design patterns.
+// Objects can range from something as simple as a .wrapper element to layout systems.
+@import "objects/objects";
+
+// Components
+// Designed components, chunks of UI, go here
+@import "components/components";
+
+// This is the only place where !important declarations will be accepted.
+// This is the highest specificity layer includes the most explicit types of rules.
+@import "trumps/trumps";
+
+/**
+ * Import layouts
+ * It's a best practice to use a different partial for each page
+ */
+
+@import "layouts/home";
+
+

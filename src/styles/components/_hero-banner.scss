@@ -1,0 +1,59 @@
+  
+  .hero-banner{
+  /* The image used */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),  url(/src/assets/images/hero_laptop.jpg) ;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; 
+  text-align: center; 
+}
+
+.hero-banner__text{ 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3em; 
+  
+  p {
+    @include desktop {
+      font-size: 30px;
+    }
+
+    @include tablet {
+      font-size: 20px;
+    }
+  }
+}
+
+.hero-banner__subtext{
+  font-size: 1em;
+}
+
+.hero-banner__img{
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-banner__button{
+  border-radius:0.2em;
+  border:0.1em solid $white;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: all 0.2s;
+  &:hover{
+    color: $white;
+    background-color: $black;
+  }
+}
+
+
+
